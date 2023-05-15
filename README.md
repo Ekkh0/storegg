@@ -1,3 +1,15 @@
+To run this project you must first have node installed. Then after you cloned the repo put this in cmd
+
+### `npm install`
+
+after that you can just type
+
+### `npm start`
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
