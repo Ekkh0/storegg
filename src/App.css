@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #D2EBF2;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #90BEBE;
+    padding: 20px 20px;
+}
+
+.header > *{
+    background-color: #90BEBE;
+}
+
+.logocontainer{
+    background-color: #90BEBE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.logo{
+    background-color: #90BEBE;
+    width: 40px;
+}
+
+.search{
+    display: flex;
+    background-color: white;
+    border-radius: 50px;
+    border-color: black;
+    border: solid 2px;
+    font-size: 20px;
+    padding: 5px 10px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+.profile{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coincontainer{
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.coincontainer > p{
+    background-color: black;
+    color: teal;
+    padding-right: 10px;
+}
+
+.userimg{
+    height: 50px;
+    padding-left: 20px;
+    background-color: #90BEBE;
+}
+
+.searchbar{
+    width: 400px;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchbtn{
+    margin-left: 20px;
+    padding: 0 10px;
+    border: 2px solid teal;
+    background-color: white;
+    font-weight: 1000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.searchbtn:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+.searchbar > img{
+    position: absolute;
+    width: 25px;
+    top: 6px;
+    left: 12px;
+    background-color: transparent;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .productlist{
+    display: flex;
+    justify-content: left;
+    width: 95%;
+    margin: 10px;
+    background-color: white;
+    height: 150px;
+    border: solid 3px black;
+    border-radius: 10px;
+    overflow: hidden;
+} */
+
+.overlaybtn{
+    width: 95%;
+    height: 150px;
+    margin: 10px;
+    border: none;
+}
+
+.productlist{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.productdetail{
+    background-color: white;
+    width: 70vw;
+}
+
+.productdetail > *{
+    background-color: white;
+    text-align: left;
+}
+
+.imgcontainer{
+    background-color: white;
+    height: 124px;
+    width: 124px;
+    margin: 10px;
+    border: solid 3px black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.productimage{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.productprice{
+    font-size: 20px;
+}
+
+.desctitle{
+    font-size: 13px;
+}
+
+.desc{
+    font-size: 13px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.overlay{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.589);
+    width: 100%;
+    height: 100%;
+}
+
+.clickout{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    border: none;
+}
+
+.ovycontent{
+    z-index: 2;
+    display: block;
+    box-shadow: 18px 18px 15px teal;
+}
+
+.overlayproduct{
+    display: flex;
+    flex-direction: row;
+}
+
+.ovycontent > h1{
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 90vw;
+}
+
+.overlaycont1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlayimage{
+    background-color: white;
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.buybtn{
+    margin-top: 20px;
+    width: 100px;
+    font-size: 25px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.buybtn:hover{
+    background-color: darkred;
+}
+
+.overlaycont2{
+    width: 65vw;
+    padding: 20px 0;
+}
+
+.overlaycont2 > h2{
+    padding-bottom: 10px;
+}
+
+.overlaycont2 > p{
+    padding-bottom: 10px;
+}
+
+.coingame{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 100px;
+    background-color: #90BEBE;
+    box-shadow: 5px 5px black;
+}
+
+.coingame > img{
+    width: 50px;
+}
+
+.separator{
+    display: flex;
+}
+
+.myproductlink{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    background-color: red;
+    color: black;
+    padding: 5px 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.homepagelink{
+    text-decoration: none;
+    color: black;
+}
+
+.okoverlay{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.589);
+    width: 100%;
+    height: 100%;
+}
+
+.okcontent > img{
+    background-color: #D2EBF2;
+    width: 100px;
+}
+
+.okcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 18px 18px 15px teal;
+}
+
+.okcontent > h1{
+    margin-bottom: 10px;
+}
+
+.okcontent > p{
+    margin-bottom: 5px;
+}
+
+.okcontent > button{
+    padding: 5px 50px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.okcontent > button:hover{
+    background-color: darkred;
+}
+
+.alignleftbody{
+    padding: 20px 50px;
+}
+
+.prizes{
+    display: flex;
+    justify-content: center;
+}
+
+.prizecont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+.prizecont > img{
+    width: 80px;
+}
+
+.eggcont{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    position: relative;
+}
+
+.eggcont > p {
+    margin-bottom: 50px;
+}
+
+.telur{
+    width: 250px;
+}
+
+.coinegg{
+    display: none;
+    position: absolute;
+    top: 40%;
+    width: 170px;
+    background-color: transparent;
+}
+
+#eggbtn{
+    border: none;
+    cursor: pointer;
+}
